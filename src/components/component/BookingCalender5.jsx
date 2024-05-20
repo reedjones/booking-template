@@ -17,7 +17,7 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
-import Link from "next/link"
+import { Link } from '@chakra-ui/react'
 import { Button } from "../ui/button"
 import { DropdownMenuTrigger, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem, DropdownMenuContent, DropdownMenu } from "../ui/dropdown-menu"
 import { Label } from "../ui/label"
@@ -27,42 +27,10 @@ import { Calendar } from "../ui/calendar"
 import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
 
-export function BookingCalender5() {
+export default function BookingCalender5() {
   return (
-    (<div className="flex min-h-screen flex-col bg-gray-100 dark:bg-gray-950">
-      <header className="bg-white px-4 py-3 shadow-sm dark:bg-gray-900">
-        <div className="container mx-auto flex items-center justify-between">
-          <Link className="flex items-center gap-2 font-semibold" href="#">
-            <CalendarIcon className="h-6 w-6" />
-            <span>Acme Scheduling</span>
-          </Link>
-          <div className="flex items-center gap-4">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button size="icon" variant="ghost">
-                  <img
-                    alt="User Avatar"
-                    className="rounded-full"
-                    height={32}
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "32/32",
-                      objectFit: "cover",
-                    }}
-                    width={32} />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuLabel>John Doe</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>Profile</DropdownMenuItem>
-                <DropdownMenuItem>Settings</DropdownMenuItem>
-                <DropdownMenuItem>Logout</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-        </div>
-      </header>
+    (
+
       <main className="flex-1 py-8">
         <div
           className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-[1fr_300px]">
@@ -238,24 +206,7 @@ export function BookingCalender5() {
           </div>
         </div>
       </main>
-      <footer className="bg-white px-4 py-3 shadow-sm dark:bg-gray-900">
-        <div className="container mx-auto flex items-center justify-between">
-          <p className="text-sm text-gray-500 dark:text-gray-400">© 2024 Acme Scheduling. All rights reserved.</p>
-          <div className="flex items-center gap-4">
-            <Link
-              className="text-sm font-medium hover:underline dark:text-gray-400"
-              href="#">
-              Terms of Service
-            </Link>
-            <Link
-              className="text-sm font-medium hover:underline dark:text-gray-400"
-              href="#">
-              Privacy Policy
-            </Link>
-          </div>
-        </div>
-      </footer>
-    </div>)
+     )
   );
 }
 

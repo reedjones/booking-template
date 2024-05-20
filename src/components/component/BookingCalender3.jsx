@@ -24,7 +24,7 @@ import { PopoverTrigger, PopoverContent, Popover } from "../ui/popover"
 import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "../ui/select"
 import { RadioGroupItem, RadioGroup } from "../ui/radio-group"
 
-export function BookingCalender3() {
+export default function BookingCalender3() {
   return (
     (<div className="max-w-4xl mx-auto p-4 sm:p-6 md:p-8">
       <div className="grid gap-6">

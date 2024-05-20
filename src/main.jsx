@@ -7,7 +7,7 @@ import theme from "./theme.jsx";
 import { DevSupport } from "@react-buddy/ide-toolbox";
 import { ComponentPreviews, useInitial } from "./dev/index.js";
 import { ColorModeScript } from '@chakra-ui/react'
-
+import { BrowserRouter } from "react-router-dom";
 // 2. Import the Saas UI theme
 
 // 2. Extend the theme to include custom colors, fonts, etc
@@ -24,7 +24,9 @@ ReactDOM.createRoot (rootElement).render (
       <DevSupport ComponentPreviews={ComponentPreviews}
                   useInitialHook={useInitial}
       >
+           <BrowserRouter>
 <App/>
+           </BrowserRouter>
 </DevSupport>
     </SaasProvider>
   </React.StrictMode>

@@ -2,14 +2,14 @@
 import React from "react";
 import { Header } from "./Header.jsx";
 import { Footer } from "./Footer.jsx";
+import { Outlet } from "react-router-dom";
 
-
-const Layout = (props) => {
+const Layout = () => {
     return (
       <div className="flex flex-col min-h-screen">
-           <Header/>
+           <Header></Header>
           <main className="flex-1">
-                {props.children}
+               <Outlet/>
           </main>
             <Footer/>
       </div>

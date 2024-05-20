@@ -17,14 +17,14 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
-import Link from "next/link"
+import { Link } from '@chakra-ui/react'
 import { Input } from "../ui/input"
 import { Button } from "../ui/button"
 import { DropdownMenuTrigger, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem, DropdownMenuContent, DropdownMenu } from "../ui/dropdown-menu"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "../ui/table"
 import { Badge } from "../ui/badge"
 
-export function Apointmanger3() {
+export function Appoint3() {
   return (
     (<div
       className="grid min-h-screen w-full grid-cols-[280px_1fr] overflow-hidden">
@@ -500,3 +500,5 @@ function UsersIcon(props) {
     </svg>)
   );
 }
+
+export default Appoint3;

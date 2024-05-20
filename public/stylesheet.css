@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Lazy Dog';
+    src: url('subset-LazyDog.woff2') format('woff2'),
+        url('subset-LazyDog.woff') format('woff'),
+        url('subset-LazyDog.svg#LazyDog') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.logo-text {
+    font-family:'Lazy Dog', "Wingdings 2", serif;
+
+}

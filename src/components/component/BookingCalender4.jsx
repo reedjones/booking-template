@@ -27,7 +27,7 @@ import { CardTitle, CardHeader, CardContent, Card } from "../ui/card"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "../ui/table"
 import { Badge } from "../ui/badge"
 
-export function BookingCalender4() {
+export default function BookingCalender4() {
   return (
     (<div className="flex flex-col h-screen">
       <header
